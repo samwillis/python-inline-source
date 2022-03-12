@@ -1,0 +1,1241 @@
+{
+    "scopeName": "inline.python-inline-source",
+    "injectionSelector": "L:source.python",
+    "fileTypes": [
+        "py"
+    ],
+    "patterns": [
+        {
+            "contentName": "meta.embedded.inline.markdown",
+            "begin": "(:) ((((\\w+)(\\.))?(markdown|md))|((\")(markdown|md)(\"))|((')(markdown|md)('))) (=) ([bBrRuU]?f?)(\"{3})",
+            "beginCaptures": {
+                "1": {
+                    "name": "punctuation.separator.colon.python"
+                },
+                "5": {
+                    "name": "source.python"
+                },
+                "6": {
+                    "name": "punctuation.separator.period.python"
+                },
+                "7": {
+                    "name": "meta.attribute.python"
+                },
+                "9": {
+                    "name": "string.quoted.single.python"
+                },
+                "10": {
+                    "name": "string.quoted.single.python"
+                },
+                "11": {
+                    "name": "string.quoted.single.python"
+                },
+                "13": {
+                    "name": "string.quoted.single.python"
+                },
+                "14": {
+                    "name": "string.quoted.single.python"
+                },
+                "15": {
+                    "name": "string.quoted.single.python"
+                },
+                "16": {
+                    "name": "keyword.operator.assignment.python"
+                },
+                "17": {
+                    "name": "storage.type.string.python"
+                },
+                "18": {
+                    "name": "string.quoted.multi.python"
+                }
+            },
+            "end": "(\"{3})",
+            "endCaptures": {
+                "1": {
+                    "name": "string.quoted.multi.python"
+                }
+            },
+            "patterns": [
+                {
+                    "include": "text.html.markdown"
+                }
+            ]
+        },
+        {
+            "contentName": "meta.embedded.inline.html",
+            "begin": "(:) ((((\\w+)(\\.))?(html))|((\")(html)(\"))|((')(html)('))) (=) ([bBrRuU]?f?)(\"{3})",
+            "beginCaptures": {
+                "1": {
+                    "name": "punctuation.separator.colon.python"
+                },
+                "5": {
+                    "name": "source.python"
+                },
+                "6": {
+                    "name": "punctuation.separator.period.python"
+                },
+                "7": {
+                    "name": "meta.attribute.python"
+                },
+                "9": {
+                    "name": "string.quoted.single.python"
+                },
+                "10": {
+                    "name": "string.quoted.single.python"
+                },
+                "11": {
+                    "name": "string.quoted.single.python"
+                },
+                "13": {
+                    "name": "string.quoted.single.python"
+                },
+                "14": {
+                    "name": "string.quoted.single.python"
+                },
+                "15": {
+                    "name": "string.quoted.single.python"
+                },
+                "16": {
+                    "name": "keyword.operator.assignment.python"
+                },
+                "17": {
+                    "name": "storage.type.string.python"
+                },
+                "18": {
+                    "name": "string.quoted.multi.python"
+                }
+            },
+            "end": "(\"{3})",
+            "endCaptures": {
+                "1": {
+                    "name": "string.quoted.multi.python"
+                }
+            },
+            "patterns": [
+                {
+                    "include": "text.html.basic"
+                }
+            ]
+        },
+        {
+            "contentName": "meta.embedded.inline.django_html",
+            "begin": "(:) ((((\\w+)(\\.))?(django_html|django))|((\")(django_html|django)(\"))|((')(django_html|django)('))) (=) ([bBrRuU]?f?)(\"{3})",
+            "beginCaptures": {
+                "1": {
+                    "name": "punctuation.separator.colon.python"
+                },
+                "5": {
+                    "name": "source.python"
+                },
+                "6": {
+                    "name": "punctuation.separator.period.python"
+                },
+                "7": {
+                    "name": "meta.attribute.python"
+                },
+                "9": {
+                    "name": "string.quoted.single.python"
+                },
+                "10": {
+                    "name": "string.quoted.single.python"
+                },
+                "11": {
+                    "name": "string.quoted.single.python"
+                },
+                "13": {
+                    "name": "string.quoted.single.python"
+                },
+                "14": {
+                    "name": "string.quoted.single.python"
+                },
+                "15": {
+                    "name": "string.quoted.single.python"
+                },
+                "16": {
+                    "name": "keyword.operator.assignment.python"
+                },
+                "17": {
+                    "name": "storage.type.string.python"
+                },
+                "18": {
+                    "name": "string.quoted.multi.python"
+                }
+            },
+            "end": "(\"{3})",
+            "endCaptures": {
+                "1": {
+                    "name": "string.quoted.multi.python"
+                }
+            },
+            "patterns": [
+                {
+                    "include": "text.html.django"
+                }
+            ]
+        },
+        {
+            "contentName": "meta.embedded.inline.django_txt",
+            "begin": "(:) ((((\\w+)(\\.))?(django_txt))|((\")(django_txt)(\"))|((')(django_txt)('))) (=) ([bBrRuU]?f?)(\"{3})",
+            "beginCaptures": {
+                "1": {
+                    "name": "punctuation.separator.colon.python"
+                },
+                "5": {
+                    "name": "source.python"
+                },
+                "6": {
+                    "name": "punctuation.separator.period.python"
+                },
+                "7": {
+                    "name": "meta.attribute.python"
+                },
+                "9": {
+                    "name": "string.quoted.single.python"
+                },
+                "10": {
+                    "name": "string.quoted.single.python"
+                },
+                "11": {
+                    "name": "string.quoted.single.python"
+                },
+                "13": {
+                    "name": "string.quoted.single.python"
+                },
+                "14": {
+                    "name": "string.quoted.single.python"
+                },
+                "15": {
+                    "name": "string.quoted.single.python"
+                },
+                "16": {
+                    "name": "keyword.operator.assignment.python"
+                },
+                "17": {
+                    "name": "storage.type.string.python"
+                },
+                "18": {
+                    "name": "string.quoted.multi.python"
+                }
+            },
+            "end": "(\"{3})",
+            "endCaptures": {
+                "1": {
+                    "name": "string.quoted.multi.python"
+                }
+            },
+            "patterns": [
+                {
+                    "include": "text.django"
+                }
+            ]
+        },
+        {
+            "contentName": "meta.embedded.inline.jinja",
+            "begin": "(:) ((((\\w+)(\\.))?(jinja))|((\")(jinja)(\"))|((')(jinja)('))) (=) ([bBrRuU]?f?)(\"{3})",
+            "beginCaptures": {
+                "1": {
+                    "name": "punctuation.separator.colon.python"
+                },
+                "5": {
+                    "name": "source.python"
+                },
+                "6": {
+                    "name": "punctuation.separator.period.python"
+                },
+                "7": {
+                    "name": "meta.attribute.python"
+                },
+                "9": {
+                    "name": "string.quoted.single.python"
+                },
+                "10": {
+                    "name": "string.quoted.single.python"
+                },
+                "11": {
+                    "name": "string.quoted.single.python"
+                },
+                "13": {
+                    "name": "string.quoted.single.python"
+                },
+                "14": {
+                    "name": "string.quoted.single.python"
+                },
+                "15": {
+                    "name": "string.quoted.single.python"
+                },
+                "16": {
+                    "name": "keyword.operator.assignment.python"
+                },
+                "17": {
+                    "name": "storage.type.string.python"
+                },
+                "18": {
+                    "name": "string.quoted.multi.python"
+                }
+            },
+            "end": "(\"{3})",
+            "endCaptures": {
+                "1": {
+                    "name": "string.quoted.multi.python"
+                }
+            },
+            "patterns": [
+                {
+                    "include": "source.jinja"
+                }
+            ]
+        },
+        {
+            "contentName": "meta.embedded.inline.jinja_html",
+            "begin": "(:) ((((\\w+)(\\.))?(jinja_html))|((\")(jinja_html)(\"))|((')(jinja_html)('))) (=) ([bBrRuU]?f?)(\"{3})",
+            "beginCaptures": {
+                "1": {
+                    "name": "punctuation.separator.colon.python"
+                },
+                "5": {
+                    "name": "source.python"
+                },
+                "6": {
+                    "name": "punctuation.separator.period.python"
+                },
+                "7": {
+                    "name": "meta.attribute.python"
+                },
+                "9": {
+                    "name": "string.quoted.single.python"
+                },
+                "10": {
+                    "name": "string.quoted.single.python"
+                },
+                "11": {
+                    "name": "string.quoted.single.python"
+                },
+                "13": {
+                    "name": "string.quoted.single.python"
+                },
+                "14": {
+                    "name": "string.quoted.single.python"
+                },
+                "15": {
+                    "name": "string.quoted.single.python"
+                },
+                "16": {
+                    "name": "keyword.operator.assignment.python"
+                },
+                "17": {
+                    "name": "storage.type.string.python"
+                },
+                "18": {
+                    "name": "string.quoted.multi.python"
+                }
+            },
+            "end": "(\"{3})",
+            "endCaptures": {
+                "1": {
+                    "name": "string.quoted.multi.python"
+                }
+            },
+            "patterns": [
+                {
+                    "include": "text.html.jinja"
+                }
+            ]
+        },
+        {
+            "contentName": "meta.embedded.inline.css",
+            "begin": "(:) ((((\\w+)(\\.))?(css|style|styles))|((\")(css|style|styles)(\"))|((')(css|style|styles)('))) (=) ([bBrRuU]?f?)(\"{3})",
+            "beginCaptures": {
+                "1": {
+                    "name": "punctuation.separator.colon.python"
+                },
+                "5": {
+                    "name": "source.python"
+                },
+                "6": {
+                    "name": "punctuation.separator.period.python"
+                },
+                "7": {
+                    "name": "meta.attribute.python"
+                },
+                "9": {
+                    "name": "string.quoted.single.python"
+                },
+                "10": {
+                    "name": "string.quoted.single.python"
+                },
+                "11": {
+                    "name": "string.quoted.single.python"
+                },
+                "13": {
+                    "name": "string.quoted.single.python"
+                },
+                "14": {
+                    "name": "string.quoted.single.python"
+                },
+                "15": {
+                    "name": "string.quoted.single.python"
+                },
+                "16": {
+                    "name": "keyword.operator.assignment.python"
+                },
+                "17": {
+                    "name": "storage.type.string.python"
+                },
+                "18": {
+                    "name": "string.quoted.multi.python"
+                }
+            },
+            "end": "(\"{3})",
+            "endCaptures": {
+                "1": {
+                    "name": "string.quoted.multi.python"
+                }
+            },
+            "patterns": [
+                {
+                    "include": "source.css"
+                }
+            ]
+        },
+        {
+            "contentName": "meta.embedded.inline.scss",
+            "begin": "(:) ((((\\w+)(\\.))?(scss))|((\")(scss)(\"))|((')(scss)('))) (=) ([bBrRuU]?f?)(\"{3})",
+            "beginCaptures": {
+                "1": {
+                    "name": "punctuation.separator.colon.python"
+                },
+                "5": {
+                    "name": "source.python"
+                },
+                "6": {
+                    "name": "punctuation.separator.period.python"
+                },
+                "7": {
+                    "name": "meta.attribute.python"
+                },
+                "9": {
+                    "name": "string.quoted.single.python"
+                },
+                "10": {
+                    "name": "string.quoted.single.python"
+                },
+                "11": {
+                    "name": "string.quoted.single.python"
+                },
+                "13": {
+                    "name": "string.quoted.single.python"
+                },
+                "14": {
+                    "name": "string.quoted.single.python"
+                },
+                "15": {
+                    "name": "string.quoted.single.python"
+                },
+                "16": {
+                    "name": "keyword.operator.assignment.python"
+                },
+                "17": {
+                    "name": "storage.type.string.python"
+                },
+                "18": {
+                    "name": "string.quoted.multi.python"
+                }
+            },
+            "end": "(\"{3})",
+            "endCaptures": {
+                "1": {
+                    "name": "string.quoted.multi.python"
+                }
+            },
+            "patterns": [
+                {
+                    "include": "source.css.scss"
+                }
+            ]
+        },
+        {
+            "contentName": "meta.embedded.inline.less",
+            "begin": "(:) ((((\\w+)(\\.))?(less))|((\")(less)(\"))|((')(less)('))) (=) ([bBrRuU]?f?)(\"{3})",
+            "beginCaptures": {
+                "1": {
+                    "name": "punctuation.separator.colon.python"
+                },
+                "5": {
+                    "name": "source.python"
+                },
+                "6": {
+                    "name": "punctuation.separator.period.python"
+                },
+                "7": {
+                    "name": "meta.attribute.python"
+                },
+                "9": {
+                    "name": "string.quoted.single.python"
+                },
+                "10": {
+                    "name": "string.quoted.single.python"
+                },
+                "11": {
+                    "name": "string.quoted.single.python"
+                },
+                "13": {
+                    "name": "string.quoted.single.python"
+                },
+                "14": {
+                    "name": "string.quoted.single.python"
+                },
+                "15": {
+                    "name": "string.quoted.single.python"
+                },
+                "16": {
+                    "name": "keyword.operator.assignment.python"
+                },
+                "17": {
+                    "name": "storage.type.string.python"
+                },
+                "18": {
+                    "name": "string.quoted.multi.python"
+                }
+            },
+            "end": "(\"{3})",
+            "endCaptures": {
+                "1": {
+                    "name": "string.quoted.multi.python"
+                }
+            },
+            "patterns": [
+                {
+                    "include": "source.css.less"
+                }
+            ]
+        },
+        {
+            "contentName": "meta.embedded.inline.sass",
+            "begin": "(:) ((((\\w+)(\\.))?(sass))|((\")(sass)(\"))|((')(sass)('))) (=) ([bBrRuU]?f?)(\"{3})",
+            "beginCaptures": {
+                "1": {
+                    "name": "punctuation.separator.colon.python"
+                },
+                "5": {
+                    "name": "source.python"
+                },
+                "6": {
+                    "name": "punctuation.separator.period.python"
+                },
+                "7": {
+                    "name": "meta.attribute.python"
+                },
+                "9": {
+                    "name": "string.quoted.single.python"
+                },
+                "10": {
+                    "name": "string.quoted.single.python"
+                },
+                "11": {
+                    "name": "string.quoted.single.python"
+                },
+                "13": {
+                    "name": "string.quoted.single.python"
+                },
+                "14": {
+                    "name": "string.quoted.single.python"
+                },
+                "15": {
+                    "name": "string.quoted.single.python"
+                },
+                "16": {
+                    "name": "keyword.operator.assignment.python"
+                },
+                "17": {
+                    "name": "storage.type.string.python"
+                },
+                "18": {
+                    "name": "string.quoted.multi.python"
+                }
+            },
+            "end": "(\"{3})",
+            "endCaptures": {
+                "1": {
+                    "name": "string.quoted.multi.python"
+                }
+            },
+            "patterns": [
+                {
+                    "include": "source.sass"
+                }
+            ]
+        },
+        {
+            "contentName": "meta.embedded.inline.stylus",
+            "begin": "(:) ((((\\w+)(\\.))?(stylus))|((\")(stylus)(\"))|((')(stylus)('))) (=) ([bBrRuU]?f?)(\"{3})",
+            "beginCaptures": {
+                "1": {
+                    "name": "punctuation.separator.colon.python"
+                },
+                "5": {
+                    "name": "source.python"
+                },
+                "6": {
+                    "name": "punctuation.separator.period.python"
+                },
+                "7": {
+                    "name": "meta.attribute.python"
+                },
+                "9": {
+                    "name": "string.quoted.single.python"
+                },
+                "10": {
+                    "name": "string.quoted.single.python"
+                },
+                "11": {
+                    "name": "string.quoted.single.python"
+                },
+                "13": {
+                    "name": "string.quoted.single.python"
+                },
+                "14": {
+                    "name": "string.quoted.single.python"
+                },
+                "15": {
+                    "name": "string.quoted.single.python"
+                },
+                "16": {
+                    "name": "keyword.operator.assignment.python"
+                },
+                "17": {
+                    "name": "storage.type.string.python"
+                },
+                "18": {
+                    "name": "string.quoted.multi.python"
+                }
+            },
+            "end": "(\"{3})",
+            "endCaptures": {
+                "1": {
+                    "name": "string.quoted.multi.python"
+                }
+            },
+            "patterns": [
+                {
+                    "include": "source.stylus"
+                }
+            ]
+        },
+        {
+            "contentName": "meta.embedded.inline.js",
+            "begin": "(:) ((((\\w+)(\\.))?(javascript|js))|((\")(javascript|js)(\"))|((')(javascript|js)('))) (=) ([bBrRuU]?f?)(\"{3})",
+            "beginCaptures": {
+                "1": {
+                    "name": "punctuation.separator.colon.python"
+                },
+                "5": {
+                    "name": "source.python"
+                },
+                "6": {
+                    "name": "punctuation.separator.period.python"
+                },
+                "7": {
+                    "name": "meta.attribute.python"
+                },
+                "9": {
+                    "name": "string.quoted.single.python"
+                },
+                "10": {
+                    "name": "string.quoted.single.python"
+                },
+                "11": {
+                    "name": "string.quoted.single.python"
+                },
+                "13": {
+                    "name": "string.quoted.single.python"
+                },
+                "14": {
+                    "name": "string.quoted.single.python"
+                },
+                "15": {
+                    "name": "string.quoted.single.python"
+                },
+                "16": {
+                    "name": "keyword.operator.assignment.python"
+                },
+                "17": {
+                    "name": "storage.type.string.python"
+                },
+                "18": {
+                    "name": "string.quoted.multi.python"
+                }
+            },
+            "end": "(\"{3})",
+            "endCaptures": {
+                "1": {
+                    "name": "string.quoted.multi.python"
+                }
+            },
+            "patterns": [
+                {
+                    "include": "source.js"
+                }
+            ]
+        },
+        {
+            "contentName": "meta.embedded.inline.jsx",
+            "begin": "(:) ((((\\w+)(\\.))?(javascriptreact|react|jsx))|((\")(javascriptreact|react|jsx)(\"))|((')(javascriptreact|react|jsx)('))) (=) ([bBrRuU]?f?)(\"{3})",
+            "beginCaptures": {
+                "1": {
+                    "name": "punctuation.separator.colon.python"
+                },
+                "5": {
+                    "name": "source.python"
+                },
+                "6": {
+                    "name": "punctuation.separator.period.python"
+                },
+                "7": {
+                    "name": "meta.attribute.python"
+                },
+                "9": {
+                    "name": "string.quoted.single.python"
+                },
+                "10": {
+                    "name": "string.quoted.single.python"
+                },
+                "11": {
+                    "name": "string.quoted.single.python"
+                },
+                "13": {
+                    "name": "string.quoted.single.python"
+                },
+                "14": {
+                    "name": "string.quoted.single.python"
+                },
+                "15": {
+                    "name": "string.quoted.single.python"
+                },
+                "16": {
+                    "name": "keyword.operator.assignment.python"
+                },
+                "17": {
+                    "name": "storage.type.string.python"
+                },
+                "18": {
+                    "name": "string.quoted.multi.python"
+                }
+            },
+            "end": "(\"{3})",
+            "endCaptures": {
+                "1": {
+                    "name": "string.quoted.multi.python"
+                }
+            },
+            "patterns": [
+                {
+                    "include": "source.js.jsx"
+                }
+            ]
+        },
+        {
+            "contentName": "meta.embedded.inline.ts",
+            "begin": "(:) ((((\\w+)(\\.))?(typescript|ts))|((\")(typescript|ts)(\"))|((')(typescript|ts)('))) (=) ([bBrRuU]?f?)(\"{3})",
+            "beginCaptures": {
+                "1": {
+                    "name": "punctuation.separator.colon.python"
+                },
+                "5": {
+                    "name": "source.python"
+                },
+                "6": {
+                    "name": "punctuation.separator.period.python"
+                },
+                "7": {
+                    "name": "meta.attribute.python"
+                },
+                "9": {
+                    "name": "string.quoted.single.python"
+                },
+                "10": {
+                    "name": "string.quoted.single.python"
+                },
+                "11": {
+                    "name": "string.quoted.single.python"
+                },
+                "13": {
+                    "name": "string.quoted.single.python"
+                },
+                "14": {
+                    "name": "string.quoted.single.python"
+                },
+                "15": {
+                    "name": "string.quoted.single.python"
+                },
+                "16": {
+                    "name": "keyword.operator.assignment.python"
+                },
+                "17": {
+                    "name": "storage.type.string.python"
+                },
+                "18": {
+                    "name": "string.quoted.multi.python"
+                }
+            },
+            "end": "(\"{3})",
+            "endCaptures": {
+                "1": {
+                    "name": "string.quoted.multi.python"
+                }
+            },
+            "patterns": [
+                {
+                    "include": "source.ts"
+                }
+            ]
+        },
+        {
+            "contentName": "meta.embedded.inline.tsx",
+            "begin": "(:) ((((\\w+)(\\.))?(typescriptreact|tsx))|((\")(typescriptreact|tsx)(\"))|((')(typescriptreact|tsx)('))) (=) ([bBrRuU]?f?)(\"{3})",
+            "beginCaptures": {
+                "1": {
+                    "name": "punctuation.separator.colon.python"
+                },
+                "5": {
+                    "name": "source.python"
+                },
+                "6": {
+                    "name": "punctuation.separator.period.python"
+                },
+                "7": {
+                    "name": "meta.attribute.python"
+                },
+                "9": {
+                    "name": "string.quoted.single.python"
+                },
+                "10": {
+                    "name": "string.quoted.single.python"
+                },
+                "11": {
+                    "name": "string.quoted.single.python"
+                },
+                "13": {
+                    "name": "string.quoted.single.python"
+                },
+                "14": {
+                    "name": "string.quoted.single.python"
+                },
+                "15": {
+                    "name": "string.quoted.single.python"
+                },
+                "16": {
+                    "name": "keyword.operator.assignment.python"
+                },
+                "17": {
+                    "name": "storage.type.string.python"
+                },
+                "18": {
+                    "name": "string.quoted.multi.python"
+                }
+            },
+            "end": "(\"{3})",
+            "endCaptures": {
+                "1": {
+                    "name": "string.quoted.multi.python"
+                }
+            },
+            "patterns": [
+                {
+                    "include": "source.tsx"
+                }
+            ]
+        },
+        {
+            "contentName": "meta.embedded.inline.coffeescript",
+            "begin": "(:) ((((\\w+)(\\.))?(coffeescript|coffee))|((\")(coffeescript|coffee)(\"))|((')(coffeescript|coffee)('))) (=) ([bBrRuU]?f?)(\"{3})",
+            "beginCaptures": {
+                "1": {
+                    "name": "punctuation.separator.colon.python"
+                },
+                "5": {
+                    "name": "source.python"
+                },
+                "6": {
+                    "name": "punctuation.separator.period.python"
+                },
+                "7": {
+                    "name": "meta.attribute.python"
+                },
+                "9": {
+                    "name": "string.quoted.single.python"
+                },
+                "10": {
+                    "name": "string.quoted.single.python"
+                },
+                "11": {
+                    "name": "string.quoted.single.python"
+                },
+                "13": {
+                    "name": "string.quoted.single.python"
+                },
+                "14": {
+                    "name": "string.quoted.single.python"
+                },
+                "15": {
+                    "name": "string.quoted.single.python"
+                },
+                "16": {
+                    "name": "keyword.operator.assignment.python"
+                },
+                "17": {
+                    "name": "storage.type.string.python"
+                },
+                "18": {
+                    "name": "string.quoted.multi.python"
+                }
+            },
+            "end": "(\"{3})",
+            "endCaptures": {
+                "1": {
+                    "name": "string.quoted.multi.python"
+                }
+            },
+            "patterns": [
+                {
+                    "include": "source.coffee"
+                }
+            ]
+        },
+        {
+            "contentName": "meta.embedded.inline.sql",
+            "begin": "(:) ((((\\w+)(\\.))?(sql))|((\")(sql)(\"))|((')(sql)('))) (=) ([bBrRuU]?f?)(\"{3})",
+            "beginCaptures": {
+                "1": {
+                    "name": "punctuation.separator.colon.python"
+                },
+                "5": {
+                    "name": "source.python"
+                },
+                "6": {
+                    "name": "punctuation.separator.period.python"
+                },
+                "7": {
+                    "name": "meta.attribute.python"
+                },
+                "9": {
+                    "name": "string.quoted.single.python"
+                },
+                "10": {
+                    "name": "string.quoted.single.python"
+                },
+                "11": {
+                    "name": "string.quoted.single.python"
+                },
+                "13": {
+                    "name": "string.quoted.single.python"
+                },
+                "14": {
+                    "name": "string.quoted.single.python"
+                },
+                "15": {
+                    "name": "string.quoted.single.python"
+                },
+                "16": {
+                    "name": "keyword.operator.assignment.python"
+                },
+                "17": {
+                    "name": "storage.type.string.python"
+                },
+                "18": {
+                    "name": "string.quoted.multi.python"
+                }
+            },
+            "end": "(\"{3})",
+            "endCaptures": {
+                "1": {
+                    "name": "string.quoted.multi.python"
+                }
+            },
+            "patterns": [
+                {
+                    "include": "source.sql"
+                }
+            ]
+        },
+        {
+            "contentName": "meta.embedded.inline.json",
+            "begin": "(:) ((((\\w+)(\\.))?(json))|((\")(json)(\"))|((')(json)('))) (=) ([bBrRuU]?f?)(\"{3})",
+            "beginCaptures": {
+                "1": {
+                    "name": "punctuation.separator.colon.python"
+                },
+                "5": {
+                    "name": "source.python"
+                },
+                "6": {
+                    "name": "punctuation.separator.period.python"
+                },
+                "7": {
+                    "name": "meta.attribute.python"
+                },
+                "9": {
+                    "name": "string.quoted.single.python"
+                },
+                "10": {
+                    "name": "string.quoted.single.python"
+                },
+                "11": {
+                    "name": "string.quoted.single.python"
+                },
+                "13": {
+                    "name": "string.quoted.single.python"
+                },
+                "14": {
+                    "name": "string.quoted.single.python"
+                },
+                "15": {
+                    "name": "string.quoted.single.python"
+                },
+                "16": {
+                    "name": "keyword.operator.assignment.python"
+                },
+                "17": {
+                    "name": "storage.type.string.python"
+                },
+                "18": {
+                    "name": "string.quoted.multi.python"
+                }
+            },
+            "end": "(\"{3})",
+            "endCaptures": {
+                "1": {
+                    "name": "string.quoted.multi.python"
+                }
+            },
+            "patterns": [
+                {
+                    "include": "source.json"
+                }
+            ]
+        },
+        {
+            "contentName": "meta.embedded.inline.yaml",
+            "begin": "(:) ((((\\w+)(\\.))?(yaml))|((\")(yaml)(\"))|((')(yaml)('))) (=) ([bBrRuU]?f?)(\"{3})",
+            "beginCaptures": {
+                "1": {
+                    "name": "punctuation.separator.colon.python"
+                },
+                "5": {
+                    "name": "source.python"
+                },
+                "6": {
+                    "name": "punctuation.separator.period.python"
+                },
+                "7": {
+                    "name": "meta.attribute.python"
+                },
+                "9": {
+                    "name": "string.quoted.single.python"
+                },
+                "10": {
+                    "name": "string.quoted.single.python"
+                },
+                "11": {
+                    "name": "string.quoted.single.python"
+                },
+                "13": {
+                    "name": "string.quoted.single.python"
+                },
+                "14": {
+                    "name": "string.quoted.single.python"
+                },
+                "15": {
+                    "name": "string.quoted.single.python"
+                },
+                "16": {
+                    "name": "keyword.operator.assignment.python"
+                },
+                "17": {
+                    "name": "storage.type.string.python"
+                },
+                "18": {
+                    "name": "string.quoted.multi.python"
+                }
+            },
+            "end": "(\"{3})",
+            "endCaptures": {
+                "1": {
+                    "name": "string.quoted.multi.python"
+                }
+            },
+            "patterns": [
+                {
+                    "include": "source.yaml"
+                }
+            ]
+        },
+        {
+            "contentName": "meta.embedded.inline.graphql",
+            "begin": "(:) ((((\\w+)(\\.))?(graphql))|((\")(graphql)(\"))|((')(graphql)('))) (=) ([bBrRuU]?f?)(\"{3})",
+            "beginCaptures": {
+                "1": {
+                    "name": "punctuation.separator.colon.python"
+                },
+                "5": {
+                    "name": "source.python"
+                },
+                "6": {
+                    "name": "punctuation.separator.period.python"
+                },
+                "7": {
+                    "name": "meta.attribute.python"
+                },
+                "9": {
+                    "name": "string.quoted.single.python"
+                },
+                "10": {
+                    "name": "string.quoted.single.python"
+                },
+                "11": {
+                    "name": "string.quoted.single.python"
+                },
+                "13": {
+                    "name": "string.quoted.single.python"
+                },
+                "14": {
+                    "name": "string.quoted.single.python"
+                },
+                "15": {
+                    "name": "string.quoted.single.python"
+                },
+                "16": {
+                    "name": "keyword.operator.assignment.python"
+                },
+                "17": {
+                    "name": "storage.type.string.python"
+                },
+                "18": {
+                    "name": "string.quoted.multi.python"
+                }
+            },
+            "end": "(\"{3})",
+            "endCaptures": {
+                "1": {
+                    "name": "string.quoted.multi.python"
+                }
+            },
+            "patterns": [
+                {
+                    "include": "source.graphql"
+                }
+            ]
+        },
+        {
+            "contentName": "meta.embedded.inline.xml",
+            "begin": "(:) ((((\\w+)(\\.))?(xml))|((\")(xml)(\"))|((')(xml)('))) (=) ([bBrRuU]?f?)(\"{3})",
+            "beginCaptures": {
+                "1": {
+                    "name": "punctuation.separator.colon.python"
+                },
+                "5": {
+                    "name": "source.python"
+                },
+                "6": {
+                    "name": "punctuation.separator.period.python"
+                },
+                "7": {
+                    "name": "meta.attribute.python"
+                },
+                "9": {
+                    "name": "string.quoted.single.python"
+                },
+                "10": {
+                    "name": "string.quoted.single.python"
+                },
+                "11": {
+                    "name": "string.quoted.single.python"
+                },
+                "13": {
+                    "name": "string.quoted.single.python"
+                },
+                "14": {
+                    "name": "string.quoted.single.python"
+                },
+                "15": {
+                    "name": "string.quoted.single.python"
+                },
+                "16": {
+                    "name": "keyword.operator.assignment.python"
+                },
+                "17": {
+                    "name": "storage.type.string.python"
+                },
+                "18": {
+                    "name": "string.quoted.multi.python"
+                }
+            },
+            "end": "(\"{3})",
+            "endCaptures": {
+                "1": {
+                    "name": "string.quoted.multi.python"
+                }
+            },
+            "patterns": [
+                {
+                    "include": "text.xml"
+                }
+            ]
+        },
+        {
+            "contentName": "meta.embedded.inline.python",
+            "begin": "(:) ((((\\w+)(\\.))?(python))|((\")(python)(\"))|((')(python)('))) (=) ([bBrRuU]?f?)(\"{3})",
+            "beginCaptures": {
+                "1": {
+                    "name": "punctuation.separator.colon.python"
+                },
+                "5": {
+                    "name": "source.python"
+                },
+                "6": {
+                    "name": "punctuation.separator.period.python"
+                },
+                "7": {
+                    "name": "meta.attribute.python"
+                },
+                "9": {
+                    "name": "string.quoted.single.python"
+                },
+                "10": {
+                    "name": "string.quoted.single.python"
+                },
+                "11": {
+                    "name": "string.quoted.single.python"
+                },
+                "13": {
+                    "name": "string.quoted.single.python"
+                },
+                "14": {
+                    "name": "string.quoted.single.python"
+                },
+                "15": {
+                    "name": "string.quoted.single.python"
+                },
+                "16": {
+                    "name": "keyword.operator.assignment.python"
+                },
+                "17": {
+                    "name": "storage.type.string.python"
+                },
+                "18": {
+                    "name": "string.quoted.multi.python"
+                }
+            },
+            "end": "(\"{3})",
+            "endCaptures": {
+                "1": {
+                    "name": "string.quoted.multi.python"
+                }
+            },
+            "patterns": [
+                {
+                    "include": "source.python"
+                }
+            ]
+        }
+    ]
+}

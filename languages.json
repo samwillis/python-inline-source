@@ -1,0 +1,112 @@
+{
+    "markdown": {
+        "match": "markdown|md",
+        "contentName": "meta.embedded.inline.markdown",
+        "include": "text.html.markdown"
+    },
+    "html": {
+        "match": "html",
+        "contentName": "meta.embedded.inline.html",
+        "include": "text.html.basic"
+    },
+    "django_html": {
+        "match": "django_html|django",
+        "contentName": "meta.embedded.inline.django_html",
+        "include": "text.html.django"
+    },
+    "django_txt": {
+        "match": "django_txt",
+        "contentName": "meta.embedded.inline.django_txt",
+        "include": "text.django"
+    },
+    "jinja": {
+        "match": "jinja",
+        "contentName": "meta.embedded.inline.jinja",
+        "include": "source.jinja"
+    },
+    "jinja_html": {
+        "match": "jinja_html",
+        "contentName": "meta.embedded.inline.jinja_html",
+        "include": "text.html.jinja"
+    },
+    "css": {
+        "match": "css|style|styles",
+        "contentName": "meta.embedded.inline.css",
+        "include": "source.css"
+    },
+    "scss": {
+        "match": "scss",
+        "contentName": "meta.embedded.inline.scss",
+        "include": "source.css.scss"
+    },
+    "less": {
+        "match": "less",
+        "contentName": "meta.embedded.inline.less",
+        "include": "source.css.less"
+    },
+    "sass": {
+        "match": "sass",
+        "contentName": "meta.embedded.inline.sass",
+        "include": "source.sass"
+    },
+    "stylus": {
+        "match": "stylus",
+        "contentName": "meta.embedded.inline.stylus",
+        "include": "source.stylus"
+    },
+    "javascript": {
+        "match": "javascript|js",
+        "contentName": "meta.embedded.inline.js",
+        "include": "source.js"
+    },
+    "jsx": {
+        "match": "javascriptreact|react|jsx",
+        "contentName": "meta.embedded.inline.jsx",
+        "include": "source.js.jsx"
+    },
+    "typescript": {
+        "match": "typescript|ts",
+        "contentName": "meta.embedded.inline.ts",
+        "include": "source.ts"
+    },
+    "tsx": {
+        "match": "typescriptreact|tsx",
+        "contentName": "meta.embedded.inline.tsx",
+        "include": "source.tsx"
+    },
+    "coffeescript": {
+        "match": "coffeescript|coffee",
+        "contentName": "meta.embedded.inline.coffeescript",
+        "include": "source.coffee"
+    },
+    "sql": {
+        "match": "sql",
+        "contentName": "meta.embedded.inline.sql",
+        "include": "source.sql"
+    },
+    "json": {
+        "match": "json",
+        "contentName": "meta.embedded.inline.json",
+        "include": "source.json"
+    },
+    "yaml": {
+        "match": "yaml",
+        "contentName": "meta.embedded.inline.yaml",
+        "include": "source.yaml"
+    },
+    "graphql": {
+        "match": "graphql",
+        "contentName": "meta.embedded.inline.graphql",
+        "include": "source.graphql"
+    },
+    "xml": {
+        "match": "xml",
+        "contentName": "meta.embedded.inline.xml",
+        "include": "text.xml"
+    },
+    "python": {
+        "match": "python",
+        "contentName": "meta.embedded.inline.python",
+        "include": "source.python"
+    }
+}

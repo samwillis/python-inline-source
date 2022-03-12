@@ -1,0 +1,59 @@
+{
+    "name": "python-inline-source",
+    "displayName": "Python Inline Source Syntax Highlighting",
+    "description": "Inline syntax highlighting for Python using type hints.",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.64.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [
+            {
+                "id": "python",
+                "aliases": [
+                    "python"
+                ],
+                "extensions": [
+                    ".py",
+                    ".py3"
+                ]
+            }
+        ],
+        "grammars": [
+            {
+                "injectTo": [
+                    "source.python"
+                ],
+                "scopeName": "inline.python-inline-source",
+                "path": "./syntaxes/python-inline-source.json",
+                "embeddedLanguages": {
+                    "meta.embedded.inline.markdown": "markdown",
+                    "meta.embedded.inline.html": "html",
+                    "meta.embedded.inline.django_html": "django_html",
+                    "meta.embedded.inline.django_txt": "django_txt",
+                    "meta.embedded.inline.jinja": "jinja",
+                    "meta.embedded.inline.jinja_html": "jinja_html",
+                    "meta.embedded.inline.css": "css",
+                    "meta.embedded.inline.scss": "scss",
+                    "meta.embedded.inline.less": "less",
+                    "meta.embedded.inline.sass": "sass",
+                    "meta.embedded.inline.stylus": "stylus",
+                    "meta.embedded.inline.js": "javascript",
+                    "meta.embedded.inline.jsx": "jsx",
+                    "meta.embedded.inline.ts": "typescript",
+                    "meta.embedded.inline.tsx": "tsx",
+                    "meta.embedded.inline.coffeescript": "coffeescript",
+                    "meta.embedded.inline.sql": "sql",
+                    "meta.embedded.inline.json": "json",
+                    "meta.embedded.inline.yaml": "yaml",
+                    "meta.embedded.inline.graphql": "graphql",
+                    "meta.embedded.inline.xml": "xml",
+                    "meta.embedded.inline.python": "python"
+                }
+            }
+        ]
+    }
+}
