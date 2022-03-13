@@ -65,10 +65,10 @@ def make_vs_code_extension(languages):
 
 def make_python_types(languages):
     sourcetypes_file_path = os.path.join(
-        directory, "python-sourcetypes", "sourcetypes.py"
+        directory, "sourcetypes", "sourcetypes.py"
     )
     readme_file_path = os.path.join(
-        directory, "python-sourcetypes", "README.md"
+        directory, "sourcetypes", "README.md"
     )
     add_supported_languages_to_readme(languages, readme_file_path)
     with open(sourcetypes_file_path, 'w') as f:
@@ -110,6 +110,7 @@ def main():
         languages = json.load(f)
     make_vs_code_extension(languages)
     make_python_types(languages)
+    add_supported_languages_to_readme(languages, os.path.join(directory, "README.md"))
 
 
 if __name__ == "__main__":

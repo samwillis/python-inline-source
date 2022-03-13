@@ -29,8 +29,8 @@ my_html_string: html = """
 """
 ```
 
-In order to aid with the type decorations the `python-sourcetypes` package can be 
-installed (`pip install python-sourcetypes`) which allows this for all supported 
+In order to aid with the type decorations the `sourcetypes` package can be 
+installed (`pip install sourcetypes`) which allows this for all supported 
 languages:
 
 ```
@@ -41,7 +41,7 @@ my_html_string: sourcetypes.html = """
 """
 ```
 
-The `python-sourcetypes` package uses [typing.Annotated](https://docs.python.org/3/library/typing.html#typing.Annotated)
+The `sourcetypes` package uses [typing.Annotated](https://docs.python.org/3/library/typing.html#typing.Annotated)
 to annotate the `str` type with the language used. You can use 
 [typing.get_type_hints](https://docs.python.org/3/library/typing.html#typing.get_type_hints) 
 at runtime to determine the language that a string has been annotated with.
@@ -76,6 +76,9 @@ at runtime to determine the language that a string has been annotated with.
 - At least Visual Studio Code v1.64.0 recommended, not tested on older versions.
 
 ## Release Notes
+
+### [0.0.2] - 2022-03-13
+- Doc tweaks
 
 ### [0.0.1] - 2022-03-11
 - Alpha release

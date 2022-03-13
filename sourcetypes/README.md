@@ -15,7 +15,7 @@ at runtime to determine the language that a string has been annotated with.
 ## Installation
 
 ```
-pip install python-sourcetypes
+pip install sourcetypes
 ```
 
 ## Example
@@ -70,6 +70,9 @@ my_html_string: html = """
 - `python`
 
 ## Release Notes
+
+### [0.0.2] - 2022-03-13
+- Doc tweaks
 
 ### [0.0.1] - 2022-03-11
 - Alpha release
