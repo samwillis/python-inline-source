@@ -14,7 +14,7 @@ Also available on [marketplace.visualstudio.com](https://marketplace.visualstudi
 
 ## Example
 
-[![Example](docs/examples.png)](docs/examples.py)
+![Example](docs/examples.png)
 
 ## Usage
 
