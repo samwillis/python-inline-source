@@ -74,7 +74,10 @@ def make_python_types(languages):
     with open(sourcetypes_file_path, 'w') as f:
         f.writelines(
             [
-                "from typing import Annotated\n",
+                "try:\n",
+                "    from typing import Annotated\n",
+                "except ImportError:\n",
+                "    from typing_extensions import Annotated\n",
                 "\n",
                 "source_code = Annotated[str, 'source_code']\n",
                 "\n",
