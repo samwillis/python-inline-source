@@ -12,6 +12,8 @@ to annotate the `str` type with the language used. You can use
 [typing.get_type_hints](https://docs.python.org/3/library/typing.html#typing.get_type_hints) 
 at runtime to determine the language that a string has been annotated with.
 
+On Python versions prior to 3.9 uses [typing_extensions](https://pypi.org/project/typing-extensions/) to support `Annotated` types.
+
 ## Installation
 
 ```
