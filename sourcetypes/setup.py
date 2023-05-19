@@ -12,7 +12,7 @@ setup(
     description="Python Source Code Types For Inline Syntax Highlighting",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/samwillis/python-inline-source/sourcetypes",
+    url="https://github.com/samwillis/python-inline-source/",
     py_modules=['sourcetypes'],
     classifiers=[
         "Programming Language :: Python :: 3",
